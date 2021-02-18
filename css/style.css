@@ -1,0 +1,176 @@
+@import "post-style.css";
+/* @import "font-awesome.css"; */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 80px;
+  grid-template-areas:
+    "hr hr hr hr hr hr hr hr hr hr hr hr"
+    ". . title title title title title title title title . ."
+    ". main main main main main main main main main main ."
+    "ft ft ft ft ft ft ft ft ft ft ft ft";
+  /* background-color: #3f3f3f; */
+}
+
+.header {
+  grid-area: hr;
+  background-color: #ebe5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: -1px 1px 10px gray;
+}
+
+.blog-title {
+  text-align: center;
+  padding-top: 30px;
+  grid-area: title;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-bar li {
+  list-style: none;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.post {
+  max-width: 300px;
+  width: 250px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "post-title post-title . ."
+    ". . . ."
+    " . bt . .";
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.post1 {
+  background-image: url(/Blog-and-glog-Post_Example/img/post1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.post2 {
+  background-image: url(/Blog-and-glog-Post_Example/img/post2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.post3 {
+  background-image: url(/Blog-and-glog-Post_Example/img/post3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.post4 {
+  background-image: url(/Blog-and-glog-Post_Example/img/post4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.post5 {
+  background-image: url(/Blog-and-glog-Post_Example/img/post5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.post6 {
+  background-image: url(/Blog-and-glog-Post_Example/img/post6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.post7 {
+  background-image: url(/Blog-and-glog-Post_Example/img/post7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.post8 {
+  background-image: url(/Blog-and-glog-Post_Example/img/post8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.post9 {
+  background-image: url(/Blog-and-glog-Post_Example/img/post9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.post-title {
+  grid-area: post-title;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  backdrop-filter: blur(1px);
+  text-align: center;
+}
+
+.more {
+  grid-area: bt;
+  margin: 20px;
+  background-color: bisque;
+  outline: none;
+  border-radius: 10px;
+  border: 1px dotted;
+}
+
+.more:hover {
+  background-color: rgb(228, 172, 88);
+  cursor: pointer;
+}
+
+.footer {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: azure;
+  background-color: #3f3f3f;
+  grid-area: ft;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+}
+
+.heart {
+  color: red;
+}
