@@ -1,5 +1,6 @@
 @import "post-style.css";
-/* @import "font-awesome.css"; */
+@import "header-footer.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 body {
   padding: 0;
   margin: 0;
@@ -13,49 +14,6 @@ body {
     ". main main main main main main main main main main ."
     "ft ft ft ft ft ft ft ft ft ft ft ft";
   /* background-color: #3f3f3f; */
-}
-
-.header {
-  grid-area: hr;
-  background-color: #ebe5e5;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: -1px 1px 10px gray;
-}
-
-.blog-title {
-  text-align: center;
-  padding-top: 30px;
-  grid-area: title;
-}
-
-.nav-bar {
-  display: flex;
-  justify-content: space-around;
-  width: 300px;
-}
-
-.header a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 1.7em;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.nav-bar li {
-  list-style: none;
-}
-
-.logo {
-  width: 60px;
-  height: 60px;
-  margin-left: 10px;
 }
 
 .main {
@@ -83,55 +41,55 @@ a {
 }
 
 .post1 {
-  background-image: url(/Blog-and-glog-Post_Example/img/post1.jpg);
+  background-image: url(../img/post1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .post2 {
-  background-image: url(/Blog-and-glog-Post_Example/img/post2.jpg);
+  background-image: url(../img/post2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .post3 {
-  background-image: url(/Blog-and-glog-Post_Example/img/post3.jpg);
+  background-image: url(../img/post3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .post4 {
-  background-image: url(/Blog-and-glog-Post_Example/img/post4.jpg);
+  background-image: url(../img/post4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .post5 {
-  background-image: url(/Blog-and-glog-Post_Example/img/post5.jpg);
+  background-image: url(../img/post5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .post6 {
-  background-image: url(/Blog-and-glog-Post_Example/img/post6.jpg);
+  background-image: url(../img/post6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .post7 {
-  background-image: url(/Blog-and-glog-Post_Example/img/post7.jpg);
+  background-image: url(../img/post7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .post8 {
-  background-image: url(/Blog-and-glog-Post_Example/img/post8.jpg);
+  background-image: url(../img/post8.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .post9 {
-  background-image: url(/Blog-and-glog-Post_Example/img/post9.jpg);
+  background-image: url(../img/post9.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -157,20 +115,4 @@ a {
 .more:hover {
   background-color: rgb(228, 172, 88);
   cursor: pointer;
-}
-
-.footer {
-  padding-left: 10px;
-  padding-right: 10px;
-  color: azure;
-  background-color: #3f3f3f;
-  grid-area: ft;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  bottom: 0;
-}
-
-.heart {
-  color: red;
 }
